@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Audio, Img, interpolate, spring, useCurrentFrame, useVideoConfig, staticFile, Sequence } from 'remotion';
+import { AbsoluteFill, Audio, Img, interpolate, spring, useCurrentFrame, useVideoConfig, staticFile } from 'remotion';
 
 export const TexilasAd: React.FC = () => {
   const frame = useCurrentFrame();
@@ -37,19 +37,6 @@ export const TexilasAd: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: '#FFA500', justifyContent: 'center', alignItems: 'center' }}>
       <Audio src={staticFile('voiceover.mp3')} volume={0.8} />
-
-      {/* Sound effects for animations */}
-      <Sequence from={0}>
-        <Audio src="https://assets.mixkit.co/sfx/preview/mixkit-software-interface-start-2574.mp3" volume={0.3} />
-      </Sequence>
-
-      <Sequence from={30}>
-        <Audio src="https://assets.mixkit.co/sfx/preview/mixkit-modern-technology-select-3124.mp3" volume={0.3} />
-      </Sequence>
-
-      <Sequence from={60}>
-        <Audio src="https://assets.mixkit.co/sfx/preview/mixkit-modern-technology-select-3124.mp3" volume={0.3} />
-      </Sequence>
 
       <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', top: -200 }}>
         <Img
