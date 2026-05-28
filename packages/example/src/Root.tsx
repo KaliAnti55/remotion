@@ -245,6 +245,7 @@ import {FastUpdates} from './VisualModeTests/FastUpdates';
 import {FastUpdatesNested} from './VisualModeTests/FastUpdatesNested';
 import {VoiceVisualization} from './voice-visualization';
 import {WhisperWeb} from './WhisperWeb';
+import {CocaColaCommercial} from './CocaCola/CocaColaCommercial';
 
 class Vector2 {
 	readonly x: number;
@@ -2530,6 +2531,14 @@ export const Index: React.FC = () => {
 				height={720}
 				fps={30}
 				durationInFrames={2 * 60 * 30}
+			/>
+			<Composition
+				id="coca-cola-commercial"
+				component={CocaColaCommercial}
+				width={1920}
+				height={1080}
+				fps={60}
+				durationInFrames={15 * 60}
 			/>
 		</>
 	);
